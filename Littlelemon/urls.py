@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('book-list/', include('booklistAPI.urls')),
     path('little-lemon/', include('LittlelemonAPI.urls')),
+    path('__debug__/', include('debug_toolbar.urls')),
 ]
